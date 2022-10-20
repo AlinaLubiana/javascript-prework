@@ -1,10 +1,11 @@
-function printMessage(msg){
+function printMessage(msg, obj){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
 
-    document.getElementById('messages').appendChild(div);
+    document.getElementById(obj).appendChild(div);
 }
 
-function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
+function clearMessages(obj){
+	document.getElementById(obj).innerHTML = '';
+
 }

@@ -1,5 +1,8 @@
 function playGame(playerInput){
-        clearMessages();
+
+    clearMessages('messages');
+    clearMessages('result');
+
 
     function getMoveName(argMoveId){
         if(argMoveId == '1'){
@@ -11,7 +14,7 @@ function playGame(playerInput){
         if(argMoveId == '3'){
             return 'nożyce';
         }
-        printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+        printMessage('Nie znam ruchu o id ' + argMoveId + '.', 'messages');
         return 'nieznany ruch';
     }
 
@@ -19,9 +22,9 @@ function playGame(playerInput){
         
         console.log('moves:', argComputerMove, argPlayerMove);
         
-        printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+        printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove, 'messages');
         if( argComputerMove ==  argPlayerMove ){
-            printMessage('Mamy ramis!'); 
+            printMessage('Mamy ramis!', 'messages'); 
             return;
         }
 
@@ -29,11 +32,14 @@ function playGame(playerInput){
             (argComputerMove == 'papier' && argPlayerMove == 'nożyce')||
             (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')
         ){
-        printMessage('Ty wygrywasz!'); 
+        printMessage('Ty wygrywasz!', 'messages');
+        scorePlayer = scorePlayer + 1;
+        
         }
 
         else {
-        printMessage('Tym razem przegrywasz :(');
+        printMessage('Tym razem przegrywasz :(', 'messages');
+        scoreComputer = scoreComputer + 1;
         }
     }
   
@@ -73,6 +79,7 @@ printMessage('Twój ruch to: ' + playerMove);
 */
 
     displayResult(computerMove, playerMove);
+    printMessage('wynik ' + scorePlayer + ' - ' + scoreComputer, 'result');
 
 /*
 if( computerMove == 'kamień' && playerMove == 'papier'){
@@ -115,6 +122,7 @@ if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
     printMessage('nieznany ruch'); 
 }
 */
+
 }
 
 let playRockBtn = document.getElementById('playRock');
@@ -127,4 +135,16 @@ playRockBtn.addEventListener('click', function() {playGame(1)});  //https://stac
 playPaperBtn.addEventListener('click', function() {playGame(2)});  
 playScissorsBtn.addEventListener('click', function() {playGame(3)});  
 
-clearScreenBtn.addEventListener('click', function() {clearMessages()}); 
+clearScreenBtn.addEventListener('click', function() {
+    scorePlayer = 0;
+    scoreComputer = 0;  
+    clearMessages('messages');
+    clearMessages('result');
+}); 
+
+let scorePlayer = 0;
+let scoreComputer = 0;
+
+
+
+
