@@ -22,36 +22,141 @@
 
 </head>
 <body>
-	<div class="container">
-		<div class="col">
-			<div class="card border-0 mb-3 d-flex justify-content-center align-items-center">
-				<img src="https://i.postimg.cc/pTd9DZWc/photo-124106.jpg" alt="image">
 
-				<div class="card-body text-center position-absolute mb-5">
-				<h1>Witam!<br> Zagrajmy <br>"kamień papier nożyce"!</h1>
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+            <div class="site-mobile-menu-body">
+            </div>
+    </div>
+	
+
+<!-- banner -->
+<header class="site-navbar" role="banner">
+
+	<div class="site-navbar-text">
+		<h1>Witam!<br> Zagrajmy <br><b>"kamień papier nożyce"!<b></h1>
+	</div>
+</header>
+
+<div class="hero" style="background-image: url('img/1.jpg');">
+</div>
+
+
+<!--Zasady-->
+
+<div class="text-bg-light p-5">Zasady gry kamień papier nożyce</div>
+
+<div class="container py-5">
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<div class="row  d-flex justify-content-around">
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card border-0">
+						<div class="icon icon-2">
+							<i class="fa-solid fa-gem"></i>
+						</div>
+						<div class="card-body">
+							<h4 class="card-body-title">Kamień</h4>
+							<p class="text">Przegrywa z papierem wygrywa z nożycami.
+								<br>TIP: <br> 
+								Według badań osoby niedoświadczone w grze częściej używają kamienia niż osoby doświadczone.
+							</p>
+						</div>
+					</div>
 				</div>
 
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card border-0">
+						<div class="icon icon-1">
+							<i class="fa-solid fa-scroll"></i>
+						</div>
+						<div class="card-body">
+							<h4 class="card-body-title">Papier</h4>
+							<p class="text">Wygrywa z kamieniem przegrywa z nożycami.
+								<br>TIP: <br> 
+								Badania wskazują, że to bardzo dobry układ, gdyż osoby niezdecydowane częściej pokazują nożyczki niż kamień.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="card border-0">
+						<div class="icon">
+							<i class="fa-solid fa-scissors"></i>
+						</div>
+						<div class="card-body">
+							<h4 class="card-body-title">Nożyce</h4>
+							<p class="text">Poddają się kamieniowi wygrywają z papierem.
+								<br>TIP: <br> 
+								Po pokazaniu kamienia i przegranej z papierem pokaż nożyczki zazwyczaj gracze po wygranej papierem powtarzają go.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		<h3>Zasady gry kamień papier nożyce</h3>
-		<p>jeżeli ty pokażesz kamień, a twój przeciwnik nożyczki, 
-			otrzymujesz jeden punkt. 
-			Jeżeli natomiast Twój przeciwnik pokazałby papier 
-			(podczas gdy ty masz kamień, 
-			punkt należy do niego. W konfiguracji nożyczki - 
-			papier wygrywa gracz, który pokaże nożyczki.</p>
-
-		<h3>A teraz zagrajmy!</h3>
-		<div id="buttons">
-			<button id="playRock">Kamień</button>
-			<button id="playPaper">Papier</button>
-			<button id="playScissors">Nożyce</button>
-			<button id="clearScreen">Wyczyść treść</button>
-		</div>
-		<div id="messages"></div>
-		<div id="result"></div>
 	</div>
+</div>
+
+<!--Gra-->
+<div class="text-bg-light p-5">A teraz zagrajmy!</div>
+
+
+	<div class="container">
+		<div class="container py-5">
+			<div class="row">
+		
+				<div class="col-lg-12">
+					<div class="row  d-flex justify-content-around">
+						<div class="col-lg-3 col-sm-6">
+							<div id="buttons">
+								<button class="button-1" id="playRock">Kamień</button>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div id="buttons">
+								<button id="playPaper">Papier</button>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-sm-6">
+							<div id="buttons">
+								<button id="playScissors">Nożyce</button>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<div class="row  d-flex justify-content-around">
+				<div id="buttons">
+					<button id="clearScreen">Wyczyść treść</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="messages"></div>
+	<div id="result"></div>
+
+
+
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

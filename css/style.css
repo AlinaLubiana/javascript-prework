@@ -1,3 +1,108 @@
 body {
     font-family: 'Poppins', sans-serif;
+    height: 200vh;
+    position: relative; 
+}
+
+  /*!!!!!!HEAD!!!!!!!*/
+.site-navbar {
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    /* z-index: 1999;*/
+}
+
+  /*text on the banner*/
+.site-navbar-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+  
+.site-navbar-text h1 {
+    color: #fff;
+    font-family:'Poppins', sans-serif;
+    font-size: 60px;
+    text-transform: capitalize;
+  }
+
+  /*banner*/
+  .hero {
+      height: 100vh;
+      max-height: 350px;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; 
+      cursor: pointer;
+  }
+  
+/*Zasady*/
+.text-bg-light {
+    color: #008000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+  .card-body-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h4 a {
+    color: black; 
+
+  }
+  .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    
+  }
+  .icon {
+    margin: auto;
+    font-size: 35px;
+    color: #f1c40f;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-1 {
+    color: #E505F5;
+  }
+  .icon-2 {
+    color: #1D05F5;
+  }
+
+  .icon:hover {
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*Gra*/
+button {
+
+
+}
+.button-1 {
+    color: #008000;
 }
