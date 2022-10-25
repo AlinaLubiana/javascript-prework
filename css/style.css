@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    height: 200vh;
+    
     position: relative; 
 }
 
@@ -69,27 +69,29 @@ body {
     margin: auto;
     font-size: 35px;
     color: #f1c40f;
-    border-radius: 50%;
+    border-radius: 15px;
     width: 65px;
     height: 65px;
     border-style: solid;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
   .icon-1 {
-    color: #E505F5;
-  }
-  .icon-2 {
     color: #1D05F5;
   }
+  .icon-2 {
+    color: #E505F5;
+  }
+
+
 
   .icon:hover {
     margin: auto;
     font-size: 35px;
     color: black;
-    border-radius: 50%;
+    border-radius: 15px;
     width: 65px;
     height: 65px;
     border-style: solid;
@@ -100,9 +102,65 @@ body {
 
 /*Gra*/
 button {
-
-
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    
 }
+
 .button-1 {
+    color: #000;
+    background-color: #E505F5;
+    border-color: #E505F5;
+    border-radius: 15px;
+}
+.button-1:hover {
+    background-color: #fff;
+}
+.button-2 {
+    color: #fff;
+    background-color: #1D05F5;
+    border-color: #1D05F5;
+    border-radius: 15px;
+}
+.button-2:hover {
+    background-color: #fff;
+    color: #000;
+}
+.button-3 {
+    color: #000;
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    border-radius: 15px;
+}
+.button-3:hover {
+    background-color: #fff;
+}
+
+.button-4 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    width: 300px;
+    height: 80px;
+    background-color:#008000;;
+    border-color: #008000;;
+    border-radius: 15px;
+}
+.button-4:hover {
+    background-color: #fff;
+}
+.text-messages {
     color: #008000;
+}
+.text-result {
+    color: red;
+    font-size: 30px;
+}
+
+.footer {
+    max-height: 100px;
 }

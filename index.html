@@ -118,21 +118,21 @@
 		
 				<div class="col-lg-12">
 					<div class="row  d-flex justify-content-around">
-						<div class="col-lg-3 col-sm-6">
+						<div class="col-lg-3 col-sm-6 m-2 d-flex justify-content-around">
 							<div id="buttons">
 								<button class="button-1" id="playRock">Kamień</button>
 							</div>
 						</div>
 
-						<div class="col-lg-3 col-sm-6">
+						<div class="col-lg-3 col-sm-6 m-2  d-flex justify-content-around">
 							<div id="buttons">
-								<button id="playPaper">Papier</button>
+								<button class="button-2" id="playPaper">Papier</button>
 							</div>
 						</div>
 						
-						<div class="col-lg-3 col-sm-6">
+						<div class="col-lg-3 col-sm-6 m-2  d-flex justify-content-around">
 							<div id="buttons">
-								<button id="playScissors">Nożyce</button>
+								<button class="button-3"id="playScissors">Nożyce</button>
 							</div>
 						</div>
 					</div>
@@ -144,20 +144,41 @@
 	</div>
 
 	<div class="col-lg-12">
-		<div class="row  d-flex justify-content-around">
+		<div class="row m-2 d-flex justify-content-around">
 				<div id="buttons">
-					<button id="clearScreen">Wyczyść treść</button>
+					<button class="button-4"id="clearScreen">Wyczyść treść</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="messages"></div>
-	<div id="result"></div>
 
+<!--wynik-->
 
+	<div class="container">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row m-2 d-flex justify-content-around">
+						<div class="text-messages" id="messages"></div>
+						
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="row m-2 d-flex justify-content-around">
+						<div class="text-result" id="result"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
+
+ 
+	<div class="hero footer" style="background-image: url('img/1.jpg');">
+	</div>
+
 </body>
 </html>
